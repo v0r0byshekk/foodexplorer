@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Food Explorer – Prato</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <style>
+    :root {
+      --bg-dark: #0b1216;
+      --bg-header: #091015;
+      --text-main: #ffffff;
+      --text-muted: #c4c4c4;
+      --accent: #9b1c23;
+      --chip-bg: #1c242a;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      background: var(--bg-dark);
+      color: var(--text-main);
+      min-height: 100vh;
+      display: grid;
+      grid-template-rows: auto 1fr auto;
+    }
+
+    header {
+      background: var(--bg-header);
+      padding: 16px 32px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+
+    .logo {
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    .search {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      background: #121a1f;
+      padding: 10px 16px;
+      border-radius: 6px;
+      color: var(--text-muted);
+    }
+
+    .search input {
+      background: none;
+      border: none;
+      outline: none;
+      color: var(--text-main);
+      width: 100%;
+      margin-left: 8px;
+    }
+
+    .btn {
+      background: var(--accent);
+      color: #fff;
+      border: none;
+      padding: 10px 18px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    main {
+      padding: 48px 64px;
+    }
+
+    .back {
+      color: var(--text-muted);
+      margin-bottom: 32px;
+      cursor: pointer;
+      display: inline-block;
+    }
+
+    .dish {
+      display: grid;
+      grid-template-columns: 360px 1fr;
+      gap: 64px;
+      align-items: center;
+    }
+
+    .dish img {
+      width: 100%;
+      border-radius: 50%;
+    }
+
+    .dish-content {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+
+    .dish-content h1 {
+      font-size: 42px;
+    }
+
+    .dish-content p {
+      color: var(--text-muted);
+      font-size: 18px;
+      line-height: 1.6;
+      max-width: 520px;
+    }
+
+    .ingredients {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .chip {
+      background: var(--chip-bg);
+      padding: 8px 14px;
+      border-radius: 6px;
+      font-size: 14px;
+    }
+
+    footer {
+      background: #05090c;
+      padding: 16px;
+      text-align: center;
+      font-size: 14px;
+      color: var(--text-muted);
+    }
+
+    @media (max-width: 900px) {
+      .dish {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
+
+      .dish img {
+        max-width: 280px;
+        margin: 0 auto;
+      }
+
+      .ingredients {
+        justify-content: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">food explorer <small>admin</small></div>
+
+  </header>
+
+  <main>
+    <div class="back" onclick="history.back()">← voltar</div>
+
+    <section class="dish">
+      <img src="img/eat/image 2.png" alt="Salada Ravanello" />
+
+      <div class="dish-content">
+        <h1>Salada Ravanello</h1>
+
+        <p>
+          Rabanetes, folhas verdes e molho agridoce salpicados com gergelim.
+          O pão naan dá um toque especial.
+        </p>
+
+        <div class="ingredients">
+          <span class="chip">alface</span>
+          <span class="chip">cebola</span>
+          <span class="chip">pão naan</span>
+          <span class="chip">pepino</span>
+          <span class="chip">rabanete</span>
+          <span class="chip">tomate</span>
+        </div>
+
+        <button class="btn" style="width: fit-content;">Editar prato</button>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    © 2023 - Todos os direitos reservados.
+  </footer>
+
+  <!-- JS -->
+  <script>
+    // JS можно расширять (поиск, кнопки, API и т.д.)
+    console.log("Food Explorer loaded");
+  </script>
+
+</body>
+</html>

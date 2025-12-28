@@ -1,0 +1,35 @@
+.header {
+  .flex-center;
+  gap: 16px;
+  padding: 16px 24px;
+  background: @header-bg;
+
+  &__logo {
+    color: @accent;
+    font-weight: bold;
+    font-size: 18px;
+    white-space: nowrap;
+  }
+
+  &__search {
+    flex: 1;
+    display: flex;
+    background: #091017;
+    border-radius: 6px;
+    padding: 8px 12px;
+
+    input {
+      flex: 1;
+      background: transparent;
+      border: none;
+      outline: none;
+      color: @text;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .header {
+    flex-wrap: wrap;
+  }
+}

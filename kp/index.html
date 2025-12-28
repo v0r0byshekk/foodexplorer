@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Food Explorer</title>
+  <link rel="stylesheet" href="style.css ">
+</head>
+<body>
+
+<header>
+  <div class="logo">food explorer</div>
+  <div class="search">
+    <input type="text" placeholder="Buscar pratos ou ingredientes" id="search" />
+  </div>
+  <button class="btn primary" onclick="addDish()">Novo prato</button>
+</header>
+
+<div class="hero">
+  <img src="img/35341462-removebg-preview.png" />
+  <div>
+    <h2>Sabores inigualáveis</h2>
+    <p>Sinta o cuidado do preparo com ingredientes selecionados</p>
+  </div>
+</div>
+
+<section>
+  <h3>Refeições</h3>
+  <div class="grid">
+    <a href="1salada.html" class="card-link">
+      <div class="card">
+        <div class="fav" onclick="toggleFav(this); event.stopPropagation();">♡</div>
+        <img src="img/eat/image 2.png">
+        <strong>Salada Ravanello</strong>
+        <p>Rabanetes, folhas verdes e molho cítrico</p>
+        <div class="price">R$ 49,97</div>
+      </div>
+    </a>
+
+    <a href="2spagetti.html" class="card-link">
+    <div class="card">
+      <div class="fav" onclick="toggleFav(this)">♡</div>
+      <img src="img/eat/image 3.png">
+      <strong>Spaghetti Gambe</strong>
+      <p>Massa fresca com camarões</p>
+      <div class="price">R$ 79,97</div>
+    </div>
+    </a>
+
+    <a href="3torradas.html" class="card-link">
+    <div class="card">
+      <div class="fav" onclick="toggleFav(this)">♡</div>
+      <img src="img/eat/image 1.png">
+      <strong>Torradas de Parma</strong>
+      <p>Presunto de parma e rúcula</p>
+      <div class="price">R$ 25,97</div>
+    </div>
+    </a>
+  </div>
+</section>
+
+<section>
+  <h3>Sobremesas</h3>
+  <div class="grid">
+     <a href="4prugna.html" class="card-link">
+    <div class="card">
+      <div class="fav" onclick="toggleFav(this)">♡</div>
+      <img src="img/eat/image 5.png">
+      <strong>Prugna Pie</strong>
+      <p>Torta de ameixa artesanal</p>
+      <div class="price">R$ 79,97</div>
+    </div>
+    </a>
+
+     <a href="5peachy.html" class="card-link">
+    <div class="card">
+      <div class="fav" onclick="toggleFav(this)">♡</div>
+      <img src="img/eat/image 6.png">
+      <strong>Peachy pastry</strong>
+      <p>Folhado de pêssego</p>
+      <div class="price">R$ 32,97</div>
+    </div>
+    </a>
+
+     <a href="6macarons.html" class="card-link">
+     <div class="card">
+      <div class="fav" onclick="toggleFav(this)">♡</div>
+      <img src="img/eat/image 7.png">
+      <strong>Macarons</strong>
+      <p>Clássicos franceses</p>
+      <div class="price">R$ 79,97</div>
+    </div>
+    </a>
+  </div>
+</section>
+
+<section>
+  <h3>Bebidas</h3>
+  <div class="grid">
+     <a href="7espresso.html" class="card-link">
+    <div class="card">
+      <div class="fav" onclick="toggleFav(this)">♡</div>
+      <img src="img/eat/image 9.png">
+      <strong>Espresso</strong>
+      <p>Café encorpado</p>
+      <div class="price">R$ 15,97</div>
+    </div>
+    </a>
+
+     <a href="8succo.html" class="card-link">
+    <div class="card">
+      <div class="fav" onclick="toggleFav(this)">♡</div>
+      <img src="img/eat/image 10.png">
+      <strong>Suco de maracujá</strong>
+      <p>Natural e refrescante</p>
+      <div class="price">R$ 13,97</div>
+    </div>
+    </a>
+
+     <a href="9cha.html" class="card-link">
+    <div class="card">
+      <div class="fav" onclick="toggleFav(this)">♡</div>
+      <img src="img/eat/image 11.png">
+      <strong>Chá de outono</strong>
+      <p>Canela e especiarias</p>
+      <div class="price">R$ 19,97</div>
+    </div>
+    </a>
+  </div>
+</section>
+
+<footer>
+  © 2025 food explorer
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
